@@ -1,6 +1,8 @@
 # Convart Text To Voice or Voice To Text
-## 
-Some Instruction: 
+## Build on:
+python 3.9 and pip 20.2.3
+
+## Some Instruction: 
 * 1st: install python 3.9.1
 * 2nd : Download pip and Install : https://www.liquidweb.com/kb/install-pip-windows/
 * 3rd: Open You CMD(windows) againg: 
