@@ -5,7 +5,7 @@ python 3.9 and pip 20.2.3
 ## Some Instruction: 
 * 1st: install python 3
 * 2nd : Download pip and Install : https://www.liquidweb.com/kb/install-pip-windows/
-* 3rd: Open You CMD(windows) againg: 
+* 3rd: Open You CMD (for WIndows) again: 
 	* 1st: type 'pip3 install pyttsx3'
 	* 2nd: type 'pip install pyaudio'
 	* 3rd: type 'pip install pipwin'
