@@ -2,7 +2,7 @@ import pyttsx3
 import speech_recognition as sr
 import os
 
-os.system('cmd /c "pip3 install pyttsx3"')
+#os.system('cmd /c "pip3 install pyttsx3"')
 print()
 print("-------------------------------------")
 print()
@@ -17,37 +17,47 @@ def speak(txt):
 
 
 def TextToVoice():
-    print("This Program will help you by reading any text!!")
     print("Paste your Text:")
     print()
     text = input()
     speak(text)
+    main()
 
 def VoiceToText():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Speak Anything :")
-        audio = r.listen(sr.Microphone())
-            try:
-                text = r.recognize_google(audio)
-                print("You said : {}".format(text))
-            except:
-                print("Sorry could not recognize what you said")
+        audio = r.listen(source,timeout=8)
+        #phrase_time_limit  listen duraning and timeout watihing duration
+        #audio = r.listen(source,timeout=3, phrase_time_limit=3)
+        #print(r.recognize_google(audio, show_all=True))
+        try:
+            #text = r.recognize_google(audio, show_all=True)
+            text = r.recognize_google(audio)
+            print("{}".format(text))
+        except:
+            print("Sorry could not recognize what you said")
+        
+        main()
 
 
 def wrongInput():
     print("Wrong Input!")
+    print()
 
     
 def main():
-    option = input("Chose Your Option: 1> TestToVoice , 2> VoiceToText")
+    #print("This Program will help to VoiceToText and TextToVOice")
+    print()
+    option = input("Chose Your Option: 1> TestToVoice :: 2> VoiceToText : ")
     
-    if option == 1:
+    if option == '1':
         TextToVoice()
-    elif option == 2:
+    elif option == '2':
         VoiceToText()
     else:
         wrongInput()
+        main()
         
 
 

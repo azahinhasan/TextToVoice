@@ -1,10 +1,14 @@
-# TextToVoice
-
-Steps : 
-* install python 3
-* install PIP
-* pip install pyaudio
-* pip install pipwin
-### or
-* pip install pipwin
-* pipwin install pyaudio
+# Convart Text To Voice or Voice To Text
+## 
+Some Instruction: 
+* 1st: install python 3.9.1
+* 2nd : Download pip and Install : https://www.liquidweb.com/kb/install-pip-windows/
+* 3rd: Open You CMD(windows) againg: 
+	** 1st: type 'pip3 install pyttsx3'
+	** 2nd: type 'pip install pyaudio'
+	** 3rd: type 'pip install pipwin'
+	#### or
+	** 2nd: type 'pip install pipwin'
+	** 3rd: type 'pipwin install pyaudio'
+* 4th: Click on the .py Program or run it your own way that you like.
+	
