@@ -8,7 +8,6 @@ python 3.9 and pip 20.2.3
 * 3rd: Open You CMD (for WIndows) again: 
 	* 1st: type 'pip3 install pyttsx3'
 	* 2nd: type 'pip install pyaudio'
-	* 3rd: type 'pip install pipwin'
 	#### or
 	* 2nd: type 'pip install pipwin'
 	* 3rd: type 'pipwin install pyaudio'
